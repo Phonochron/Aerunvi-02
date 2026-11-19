@@ -112,6 +112,13 @@ public struct ApprovedPlan: Codable, Equatable, Sendable {
   public var input: PlannerInput
   public var report: SchedulerReport
   public var revision: Int
+
+  public init(input: PlannerInput, report: SchedulerReport, revision: Int) {
+    self.input = input
+    self.report = report
+    self.revision = revision
+  }
+
   public func isStale(input: PlannerInput, timeZoneID: String) -> Bool {
     self.input != input || report.context.timeZoneID != timeZoneID
   }

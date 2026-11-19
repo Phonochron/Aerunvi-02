@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
 
-@testable import StudyPlannerCore
+import StudyPlannerCore
 
 final class SchedulerTests: XCTestCase {
   // Fixed instant; no dependency on Date.now.
