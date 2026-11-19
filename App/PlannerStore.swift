@@ -28,8 +28,9 @@ final class PlannerStore {
       record = existing
       state = try JSONDecoder().decode(PlannerState.self, from: existing.payload)
     } else {
-      state = PlannerState()
-      record = StoredPlanner(payload: try JSONEncoder().encode(state))
+      let initialState = PlannerState()
+      record = StoredPlanner(payload: try JSONEncoder().encode(initialState))
+      state = initialState
       context.insert(record)
       try context.save()
     }
