@@ -1,0 +1,54 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  000000000000000000000001 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600;}; buildConfigurationList = 000000000000000000000030; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; knownRegions = (en, Base); mainGroup = 000000000000000000000002; packageReferences = (000000000000000000000040); productRefGroup = 000000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000006, 000000000000000000000007);};
+  000000000000000000000002 = {isa = PBXGroup; children = (000000000000000000000003, 000000000000000000000004, 000000000000000000000005); sourceTree = "<group>";};
+  000000000000000000000003 = {isa = PBXGroup; children = (000000000000000000000010, 000000000000000000000011, 000000000000000000000012, 000000000000000000000013, 000000000000000000000014, 000000000000000000000015); path = App; sourceTree = "<group>";};
+  000000000000000000000004 = {isa = PBXGroup; children = (000000000000000000000016); path = AppTests; sourceTree = "<group>";};
+  000000000000000000000005 = {isa = PBXGroup; children = (000000000000000000000008, 000000000000000000000009); name = Products; sourceTree = "<group>";};
+  000000000000000000000006 = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000031; buildPhases = (000000000000000000000026, 000000000000000000000028); buildRules = (); dependencies = (); name = AdaptiveStudyPlanner; packageProductDependencies = (000000000000000000000041); productName = AdaptiveStudyPlanner; productReference = 000000000000000000000008; productType = "com.apple.product-type.application";};
+  000000000000000000000007 = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000032; buildPhases = (000000000000000000000027, 000000000000000000000029); buildRules = (); dependencies = (000000000000000000000045); name = AdaptiveStudyPlannerTests; packageProductDependencies = (000000000000000000000042); productName = AdaptiveStudyPlannerTests; productReference = 000000000000000000000009; productType = "com.apple.product-type.bundle.unit-test";};
+  000000000000000000000008 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = AdaptiveStudyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR;};
+  000000000000000000000009 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AdaptiveStudyPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR;};
+  000000000000000000000010 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlannerApp.swift; sourceTree = "<group>";};
+  000000000000000000000011 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerStore.swift; sourceTree = "<group>";};
+  000000000000000000000012 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>";};
+  000000000000000000000013 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEditor.swift; sourceTree = "<group>";};
+  000000000000000000000014 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>";};
+  000000000000000000000015 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioView.swift; sourceTree = "<group>";};
+  000000000000000000000016 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>";};
+  000000000000000000000020 = {isa = PBXBuildFile; fileRef = 000000000000000000000010;};
+  000000000000000000000021 = {isa = PBXBuildFile; fileRef = 000000000000000000000011;};
+  000000000000000000000022 = {isa = PBXBuildFile; fileRef = 000000000000000000000012;};
+  000000000000000000000023 = {isa = PBXBuildFile; fileRef = 000000000000000000000013;};
+  000000000000000000000024 = {isa = PBXBuildFile; fileRef = 000000000000000000000014;};
+  000000000000000000000025 = {isa = PBXBuildFile; fileRef = 000000000000000000000015;};
+  000000000000000000000026 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000020, 000000000000000000000021, 000000000000000000000022, 000000000000000000000023, 000000000000000000000024, 000000000000000000000025); runOnlyForDeploymentPostprocessing = 0;};
+  000000000000000000000027 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000047); runOnlyForDeploymentPostprocessing = 0;};
+  000000000000000000000028 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000043); runOnlyForDeploymentPostprocessing = 0;};
+  000000000000000000000029 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000044); runOnlyForDeploymentPostprocessing = 0;};
+  000000000000000000000030 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000050, 000000000000000000000051); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  000000000000000000000031 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000052, 000000000000000000000053); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  000000000000000000000032 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000054, 000000000000000000000055); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  000000000000000000000040 = {isa = XCLocalSwiftPackageReference; relativePath = .;};
+  000000000000000000000041 = {isa = XCSwiftPackageProductDependency; package = 000000000000000000000040; productName = StudyPlannerCore;};
+  000000000000000000000042 = {isa = XCSwiftPackageProductDependency; package = 000000000000000000000040; productName = StudyPlannerCore;};
+  000000000000000000000043 = {isa = PBXBuildFile; productRef = 000000000000000000000041;};
+  000000000000000000000044 = {isa = PBXBuildFile; productRef = 000000000000000000000042;};
+  000000000000000000000045 = {isa = PBXTargetDependency; target = 000000000000000000000006; targetProxy = 000000000000000000000046;};
+  000000000000000000000046 = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 000000000000000000000006; remoteInfo = AdaptiveStudyPlanner;};
+  000000000000000000000047 = {isa = PBXBuildFile; fileRef = 000000000000000000000016;};
+  000000000000000000000050 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 6.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ENABLE_TESTABILITY = YES; CLANG_ENABLE_MODULES = YES;}; name = Debug;};
+  000000000000000000000051 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 6.0; SWIFT_COMPILATION_MODE = wholemodule; CLANG_ENABLE_MODULES = YES;}; name = Release;};
+  000000000000000000000052 = {isa = XCBuildConfiguration; baseConfigurationReference = 000000000000000000000056; buildSettings = {}; name = Debug;};
+  000000000000000000000053 = {isa = XCBuildConfiguration; baseConfigurationReference = 000000000000000000000056; buildSettings = {}; name = Release;};
+  000000000000000000000054 = {isa = XCBuildConfiguration; baseConfigurationReference = 000000000000000000000057; buildSettings = {}; name = Debug;};
+  000000000000000000000055 = {isa = XCBuildConfiguration; baseConfigurationReference = 000000000000000000000057; buildSettings = {}; name = Release;};
+  000000000000000000000056 = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>";};
+  000000000000000000000057 = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>";};
+ };
+ rootObject = 000000000000000000000001;
+}

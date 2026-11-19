@@ -1,0 +1,8 @@
+CODE_SIGN_STYLE = Automatic
+GENERATE_INFOPLIST_FILE = YES
+PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = com.example.AdaptiveStudyPlannerTests
+TARGETED_DEVICE_FAMILY = 1
+SUPPORTED_PLATFORMS = iphoneos iphonesimulator
+BUNDLE_LOADER = $(TEST_HOST)
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/AdaptiveStudyPlanner.app/AdaptiveStudyPlanner
